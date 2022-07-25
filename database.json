@@ -1,0 +1,13 @@
+{
+  "watches": [
+    {
+      "name": "asahi",
+      "brand": "asa",
+      "price": 1000,
+      "year": "2003-01-23",
+      "photo": "card",
+      "country": "japan",
+      "id": 1
+    }
+  ]
+}
