@@ -1,13 +1,22 @@
 {
   "watches": [
     {
-      "name": "asahi",
-      "brand": "asa",
-      "price": 1000,
-      "year": "2003-01-23",
-      "photo": "card",
-      "country": "japan",
+      "name": "nazvanie",
+      "brand": "sdf",
+      "price": 234,
+      "year": "2022-07-06",
+      "photo": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
+      "country": "chehia",
       "id": 1
+    },
+    {
+      "name": "fgfdgs",
+      "brand": "sfgf",
+      "price": 3242,
+      "year": "2022-07-09",
+      "photo": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
+      "country": "sved",
+      "id": 2
     }
   ]
 }

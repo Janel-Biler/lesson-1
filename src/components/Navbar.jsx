@@ -15,7 +15,9 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import { Link } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+
+import { ClientContext } from "../contexts/ClientProvider";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -58,6 +60,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+  const { searchWord, setSearchWord, getWatches } =
+    React.useContext(ClientContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -80,6 +84,10 @@ export default function Navbar() {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  React.useEffect(() => {
+    getWatches();
+  }, [searchWord]);
 
   const menuId = "primary-search-account-menu";
   const renderMenu = (
@@ -174,15 +182,25 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <Link to="/">JUT-SU</Link>
-            <Link to="/admin">Admin</Link>
-            <Link to="/admin/add">Add</Link>
+            <Link className="navbar-links" to="/">
+              JUT-SU
+            </Link>
+            <Link className="navbar-links" to="/admin">
+              Admin
+            </Link>
+            <Link className="navbar-links" to="/admin/add">
+              Add
+            </Link>
           </Typography>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+              value={searchWord}
+              onChange={(e) => {
+                setSearchWord(e.target.value);
+              }}
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
