@@ -1,22 +1,40 @@
 {
   "watches": [
     {
-      "name": "nazvanie",
-      "brand": "sdf",
-      "price": 234,
-      "year": "2022-07-06",
-      "photo": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
-      "country": "chehia",
+      "name": "AmazFit",
+      "brand": "X-haomi",
+      "price": 5400,
+      "year": "2022-01-09",
+      "photo": "https://mi-shop.com/upload/resize_cache/iblock/7fd/195_195_1/7fd0ecc55ee3d46aa4c33d09478dcb8d.jpg",
+      "country": "china",
       "id": 1
     },
     {
-      "name": "fgfdgs",
-      "brand": "sfgf",
-      "price": 3242,
-      "year": "2022-07-09",
-      "photo": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
-      "country": "sved",
+      "name": "Galaxy Watch 4",
+      "brand": "Samsung",
+      "price": 29450,
+      "year": "2022-05-16",
+      "photo": "https://cdn.svyaznoy.ru/upload/iblock/f81/samsung_pc_sm-r895_black_1200x1600_1.jpg/resize/483x483/hq/",
+      "country": "japan",
       "id": 2
+    },
+    {
+      "name": "YVS457",
+      "brand": "Sveden",
+      "price": 110000,
+      "year": "2022-07-08",
+      "photo": "https://static.swatch.com/images/product/YVS475/sa360/YVS475_38.png",
+      "country": "sved",
+      "id": 3
+    },
+    {
+      "name": "KAN48 Watch",
+      "brand": "Honor",
+      "price": 800,
+      "year": "2021-09-28",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNk3AZcRtznILH3Kn3Cbg890ExPXH6h-at-Q&usqp=CAU",
+      "country": "china",
+      "id": 4
     }
   ]
 }

@@ -31,9 +31,9 @@ function AdminPage() {
               <TableCell>Цена</TableCell>
               <TableCell>Год</TableCell>
               <TableCell>Страна</TableCell>
-              <TableCell>Фото</TableCell>
               <TableCell>Удалить</TableCell>
               <TableCell>Редакт</TableCell>
+              <TableCell>Фото</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
